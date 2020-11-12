@@ -1,0 +1,330 @@
+
+body{ padding-top: 70px; text-transform: capitalize;}
+/* start option box */
+.option-box{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 99999;
+}
+.option-box .color-option{
+    float: left;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    display: none;
+}
+.option-box .color-option ul li{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.option-box .color-option .gear-check{ padding:10px; color: #fff; cursor: pointer;}
+/* end optoin box */
+/*start navbar*/
+.navbar{  min-height: 70px;}
+/*active link*/
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus { font-weight: bold;}
+/*normal link*/
+.navbar-inverse .navbar-nav > li > a {
+    color: #bbb;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+/*brand name*/
+.navbar-inverse .navbar-brand { color: #bbb;font-size: 30px;line-height: 40px;}
+.navbar-inverse .navbar-brand span{ font-weight: bolder; padding-right: 5px;}
+/*drop deomn menuo*/
+.dropdown-menu{background-color: #333;  min-width: 200px;}
+.dropdown-menu > li > a{
+    color: #eee;
+    padding: 6px 20px;
+    -webkit-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+    transition: padding 0.5s ease;
+}
+.dropdown-menu > li >a:hover, 
+.dropdown-menu > li >a:focus {  color: #eee; padding-left: 25px;}
+.navbar-right .dropdown-menu { right: auto; left: 0;}
+.dropdown-menu .divider{background-color:#e41b17;}
+.navbar-toggle {margin-top: 10px;}
+/*end navbar*/
+/*start carousel*/
+.carousel-caption{
+    bottom: 100px;
+    background-color: rgba(0,0,0,.3);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ 
+.carousel-inner > .item > img{width: 100%;}
+/*end carousel*/
+/*start section about*/
+
+.about .lead{ color: #888;  font-size: 25px;  margin-top: 18px;}
+.about .h1{font-weight: bold;}
+ 
+/*end section about*/
+/*      start section features*/
+
+.feature{ background-color: #eee;  }
+.feature .h1{  margin-bottom: 50px;  text-transform: capitalize;  font-weight: bold;}
+.feature .feat{  margin-bottom: 30px;}
+.feature .feat p{ line-height: 2em;}
+.feature .feat .glyphicon-user:before ,
+.glyphicon-flag:before {
+    content: "\e034";
+    content: "\e008";
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #888;
+    
+}
+/*      end section features */
+
+/* start testmonial section*/
+
+.testmonials .lead{line-height: 2em;margin-bottom: 10px;}
+
+.testmonials span{  font-size: 18px;  font-weight: bold;}
+.testmonials .carousel-inner{min-height: 120px;}
+.testmonials .carousel-indicators {
+    position: static;
+    width: 100%;
+    margin-left: auto;
+    padding-top: 20px;
+}
+.testmonials .carousel-indicators li {
+    text-indent: 0;
+    width: 80px;
+    height: 80px;
+    opacity: .5;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px;
+   -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.testmonials .carousel-indicators li .active {
+    opacity: 1;
+    background: none; 
+    width: 80px;
+    height: 80px;
+}
+.testmonials .carousel-indicators li img{max-width: 100%;}
+/* end testmonial section*/
+
+/* start  section price table */
+.price-table{  background: #eee; }
+
+.price-table .items{
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.price-table .items h2{  margin: 5px 0 15px;}
+.price-table .items:hover p{
+-webkit-transform:scale(1.1,1.1)rotate(360deg);
+-o-transform:scale(1.1,1.1)rotate(360deg);
+-moz-transform:scale(1.1,1.1)rotate(360deg);
+transform:scale(1.1,1.1)rotate(360deg);
+border: 2px solid #dfdfdf;
+}
+.price-table .items p{
+    font-size: 35px;
+    font-weight: bold;
+    color: #666;
+    width: 100px;
+    height: 100px;
+    background: #f3f3f3;
+    border-radius: 50%;
+    line-height: 100px;
+    border: 2px solid #fff;
+   -webkit-transition-duration: .7s;
+   -moz-transition-duration: .7s;
+   -o-transition-duration: .7s;
+    transition-duration: .7s;
+}
+.price-table .items ul{  line-height: 250%; font-size: 18px;}
+.price-table .items a{margin-bottom: 5px;}
+/* end  section price table */
+
+/*start section our team*/
+.our-team{  background: url('../image/our-team-background.png');color: #fff;}
+.our-team .tem1{
+    background: rgba(2,2,2,0.8);
+    color: #fff;
+    min-height: 600px;
+ 
+}
+
+.our-team .tem1 .person { margin-bottom: 20px;}
+.our-team .tem1 .person img{ width: 100%; height: 100%;}
+/*end section our team*/
+
+/* start  section subscribe*/
+.subscribe{background: #eee;}
+.subscribe .h1{ color: #888; letter-spacing: 2px; }
+.subscribe p{margin-bottom: 30px;  }
+ .subscribe .form-control { border-radius: 0px;  margin-right: -5px;  width: 300px; }
+.subscribe button { border-radius: 0px; }
+/* end  section subscribe*/
+/* start section statistic */
+.statistics{   background-image:url('../image/statiic-background.jpg') ;}
+.statistics .data{
+    background-color: rgba(2, 2, 2, 0.4);
+    color: #b5b5b5;
+    min-height: 300px;
+    
+}
+.statistics h2{  color: #fff;  font-weight: bold;  margin-bottom: 40px ;}
+.statistics .stats:hover{transition: all 0.5s ease-in-out;color: #fff;cursor: pointer;}
+.statistics p{ font-size: 60px; font-weight: 800; margin-bottom: 0;}
+.statistics span{ font-size: 20px;}
+/*  end section statistic */
+/*  start ourskills */
+.our-skill{ background-color: #dfdfdf;}
+.our-skill .skills .progress{ height: 30px;}
+.our-skill .skills .progress .progress-bar{
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px;
+}
+ /* end our skills  */
+ /* start contact us */
+.contact-us{background-image: url('../image/bg-contact-us.jpg');}
+.contact-us .fileds{background-color: rgba(9, 9, 9, 0.6);min-height: 300px;color: #ddd;}
+.contact-us .fileds p{ margin-bottom: 40px;}
+textarea.input-lg,
+ select[multiple].input-lg { height: 110px;}
+.contact-us input[type='text'],
+.contact-us textarea{   background-color:rgba(82, 78, 78, 0.7); color: #fff; border: none;}
+ /* end contact us */
+ /* start our client */
+ .ourclient{ background-color: #eee;}
+ .ourclient img{
+     opacity: 0.4;
+     filter: alph(opacity=40);
+     margin-top: 20px;
+     margin-bottom: 20px;
+     transition: all 0.7s ease-in-out;
+ }
+ .ourclient img:hover{ opacity: 1;}
+ /* end our client */
+ /*  start ultimate footer */
+ .footer{ background-color: #111; color: #aaa;  padding-top: 10px;}
+ .footer a{  color: #aaa;}
+ .footer a:hover{color: #fff;}
+.footer h3{ letter-spacing: 1px; margin: 30px 0 20px;}
+.footer  .three-coulmns{overflow: hidden;}
+.footer .three-coulmns li {
+    width: 33.3333%;
+    float: left;
+    font-size: 18px;
+    padding: 12px 0;
+    font-weight: bold;
+}
+.footer .social-list{ overflow: hidden;  margin:20px 0 10px;}
+.footer .social-list li{
+    float: left;
+    margin-right: 5px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    transition: all 0.7s ease-in-out;
+}
+.footer .social-list li:hover:{opacity: 1;}
+.footer .img-thumbnail{   background-color: rgba(0, 0, 0, 0.3);   border: 2px solid #444;   margin-bottom: 5px;}
+.footer .copyright{
+    background-color: #333;
+    color: #eee;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+ /*end ultimate footer  */
+/* start screen loading  */
+/* .loading-overlay{
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999; */
+
+
+}
+/* end screen loading */
+/* start scroll up */
+/* #scroll-top{
+    width: 50px;
+    height: 40px;
+    padding: 5px 8px;
+    color: #ddd;
+    background-color: #888;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    z-index: 99999999;
+ 
+
+}
+#scroll-top:hover{
+  
+}
+#scroll-top .fa-chevron:hover{
+    background-color: #444;
+    display: none;
+} */
+/* end scroll up */
+/* start out grouping */
+.our-team,
+.statistics,
+.contact-us{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    min-height: 600px;
+}
+.about .h1,
+.our-skill .h1,
+.subscribe .h1,
+.our-team .h1,
+.price-table .h1,
+.testmonials .h1
+{font-weight: bold;margin-bottom: 40px;}
+  
+ 
+.contact-us .fileds,
+.ourclient,
+.our-skill,
+.statistics .data,
+.subscribe,
+.our-team .tem1,
+.price-table,
+.testmonials,
+.feature,
+.about
+{
+   
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+ 
